@@ -127,36 +127,17 @@
 <button class="m-aside-header-menu-mobile-close  m-aside-header-menu-mobile-close--skin-light " id="m_aside_header_menu_mobile_close_btn"><i class="la la-close"></i></button>
 <div id="m_header_menu" class="m-header-menu m-aside-header-menu-mobile m-aside-header-menu-mobile--offcanvas  m-header-menu--skin-dark m-header-menu--submenu-skin-light m-aside-header-menu-mobile--skin-light m-aside-header-menu-mobile--submenu-skin-light ">
 
+<!-- Dashboard -->
 <ul class="m-menu__nav  m-menu__nav--submenu-arrow ">
-<li class="m-menu__item m-menu__item--tabs" m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="<?=base_url('admin/dashboard') ?>" class="m-menu__link" title=""><span
-class="m-menu__link-text">Dashboard</span><i class="m-menu__hor-arrow la la-angle-down"></i><i class="m-menu__ver-arrow la la-angle-right"></i></a>
-<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left m-menu__submenu--tabs"><span class="m-menu__arrow m-menu__arrow--adjust"></span>
+	<li class="m-menu__item m-menu__item--submenu m-menu__item--submenu m-menu__item--tabs" m-menu-submenu-toggle="tab" aria-haspopup="true">
+		<a href="<?=base_url('admin/dashboard') ?>" class="m-menu__link" title="">
+			<span class="m-menu__link-text">Dashboard</span>
+			<i class="m-menu__hor-arrow la la-angle-down"></i>
+			<i class="m-menu__ver-arrow la la-angle-right"></i>
+		</a>
+	<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left m-menu__submenu--tabs">
+		<span class="m-menu__arrow m-menu__arrow--adjust"></span>
 <ul class="m-menu__subnav">
-
-<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="<?=base_url('admin/dashboard') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-line-graph"></i><span class="m-menu__link-text">Dashboard</span></a></li>	
-
-<!-- Laporan -->
-<li class="m-menu__item  m-menu__item--submenu m-menu__item--rel m-menu__item--submenu-tabs" m-menu-submenu-toggle="click" m-menu-link-redirect="1" aria-haspopup="true"><a href="javascript:;" class="m-menu__link m-menu__toggle" title=""><i
-	 class="m-menu__link-icon flaticon-notes"></i><span class="m-menu__link-text">Laporan</span><i class="m-menu__hor-arrow la la-angle-down"></i><i class="m-menu__ver-arrow la la-angle-right"></i></a>
-<div class="m-menu__submenu  m-menu__submenu--fixed m-menu__submenu--left" style="width:350px"><span class="m-menu__arrow m-menu__arrow--adjust"></span>
-	<div class="m-menu__subnav">
-
-	<ul class="m-menu__content">
-	 <li class="m-menu__item">
-		<h3 class="m-menu__heading m-menu__toggle"><span class="m-menu__link-text"><!-- Sales --></span><i class="m-menu__ver-arrow la la-angle-right"></i></h3>
-		<ul class="m-menu__inner">		
-			<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner2.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-notes"></i><span class="m-menu__link-text">Laporan Calon Nasabah</span></a></li>	
-			<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner2.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-notes"></i><span class="m-menu__link-text">Laporan Nasabah</span></a></li>
-			<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner2.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-notes"></i><span class="m-menu__link-text">Laporan Penerimaan Barang</span></a></li>	
-			<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner2.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-notes"></i><span class="m-menu__link-text">Laporan Pengiriman Barang</span></a></li>	
-		</ul>
-	</li>
-
-		</ul>
-	</div>
-</div>
-</li>
-
 <li class="m-menu__item  m-menu__item--actions">
 <div class="">
 	<button class="btn btn-accent m-btn--pill">
@@ -166,47 +147,75 @@ class="m-menu__link-text">Dashboard</span><i class="m-menu__hor-arrow la la-angl
 	</button>
 </div>
 </li>
-
-</ul>
-</div>
+		</ul>
+	</div>
 </li>
 
 <!-- Sales -->
-	<li class="m-menu__item m-menu__item--submenu m-menu__item--submenu m-menu__item--tabs" m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="<?=base_url('admin/sales') ?>" class="m-menu__link" title=""><span class="m-menu__link-text">Sales</span><i
-			 class="m-menu__hor-arrow la la-angle-down"></i><i class="m-menu__ver-arrow la la-angle-right"></i></a>
-		<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left m-menu__submenu--tabs"><span class="m-menu__arrow m-menu__arrow--adjust"></span>
-			<ul class="m-menu__subnav">
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="<?=base_url('admin/sales') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-line-graph"></i><span class="m-menu__link-text">Dashboard</span></a></li>	
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="<?= base_url('admin/sales/data_sales') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-clipboard"></i><span class="m-menu__link-text">Data Sales</span></a></li>
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="<?= base_url('admin/sales/data_sales') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-notes"></i><span class="m-menu__link-text">Laporan</span></a></li>
-				<!-- <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="builder.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-alarm-1"></i><span class="m-menu__link-text">Invoices</span></a></li> -->
-				<li class="m-menu__item  m-menu__item--actions">
-<div class="">
-	<button class="btn btn-accent m-btn--pill">
-		<span>
-			<span><?php echo date('l, d-m-Y'); ?></span>
+<li class="m-menu__item  m-menu__item--submenu m-menu__item--submenu m-menu__item--tabs" m-menu-submenu-toggle="tab" aria-haspopup="true">
+	<a href="<?=base_url('admin/sales') ?>" class="m-menu__link" title="">
+		<span class="m-menu__link-text">Sales</span>
+		<i class="m-menu__hor-arrow la la-angle-down"></i>
+		<i class="m-menu__ver-arrow la la-angle-right"></i>
+	</a>
+	<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left m-menu__submenu--tabs">
+		<span class="m-menu__arrow m-menu__arrow--adjust">
 		</span>
-	</button>
-</div>
+			<ul class="m-menu__subnav">
+				<li class="m-menu__item  m-menu__item--actions">
+	<div class="">
+		<button class="btn btn-accent m-btn--pill">
+			<span>
+				<span><?php echo date('l, d-m-Y'); ?></span>
+			</span>
+		</button>
+	</div>
 </li>
-			</ul>
-		</div>
-	</li>
-
+		</ul>
+	</div>
+</li>
 
 <!-- Crm -->
-	<li class="m-menu__item m-menu__item--active  m-menu__item--active-tab  m-menu__item--submenu m-menu__item--submenu m-menu__item--tabs" m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="<?=base_url('crm/dashboard') ?>" class="m-menu__link" title="Customer Relationship Management"><span class="m-menu__link-text">CRM</span><i
-			 class="m-menu__hor-arrow la la-angle-down"></i><i class="m-menu__ver-arrow la la-angle-right"></i></a>
-		<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left m-menu__submenu--tabs"><span class="m-menu__arrow m-menu__arrow--adjust"></span>
+<li class="m-menu__item m-menu__item--active  m-menu__item--active-tab  m-menu__item--submenu m-menu__item--submenu m-menu__item--tabs" m-menu-submenu-toggle="tab" aria-haspopup="true">
+	<a href="<?=base_url('crm/dashboard') ?>" class="m-menu__link" title="Customer Relationship Management">
+		<span class="m-menu__link-text">CRM</span>
+		<i class="m-menu__hor-arrow la la-angle-down"></i>
+		<i class="m-menu__ver-arrow la la-angle-right"></i>
+	</a>
+		<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left m-menu__submenu--tabs">
+			<span class="m-menu__arrow m-menu__arrow--adjust"></span>
 			<ul class="m-menu__subnav">
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="<?=base_url('crm/dashboard') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-line-graph"></i><span class="m-menu__link-text">Dashboard</span></a></li>	
+				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="<?=base_url('') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-line-graph"></i><span class="m-menu__link-text">Dashboard</span></a></li>	
 				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="<?= base_url('') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-users"></i><span class="m-menu__link-text">Calon Nasabah</span></a></li>
 				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="<?= base_url('') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-user-ok"></i><span class="m-menu__link-text">Nasabah</span></a></li>
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="<?= base_url('') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-clipboard"></i><span class="m-menu__link-text">Kelompok Tani</span></a></li>
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="<?= base_url('admin/crm/data_jaminan') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-clipboard"></i><span class="m-menu__link-text">Jaminan</span></a></li>
+				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="<?= base_url('') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-network"></i><span class="m-menu__link-text">Kelompok Tani</span></a></li>
+				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="<?= base_url('admin/crm/jaminan') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-list"></i><span class="m-menu__link-text">Jaminan</span></a></li>
 				<!-- <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="builder.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-alarm-1"></i><span class="m-menu__link-text">Invoices</span></a></li> -->
 				<li class="m-menu__item  m-menu__item--actions">
-<div class="">
+	<div class="">
+		<button class="btn btn-accent m-btn--pill">
+			<span>
+				<span><?php echo date('l, d-m-Y'); ?></span>
+			</span>
+		</button>
+	</div>
+</li>
+		</ul>
+	</div>
+</li>
+
+
+<!-- Inventory -->
+<li class="m-menu__item m-menu__item--submenu m-menu__item--submenu m-menu__item--tabs" m-menu-submenu-toggle="tab" aria-haspopup="true">
+	<a href="<?=base_url('') ?>" class="m-menu__link" title="Customer Relationship Management">
+		<span class="m-menu__link-text">INVENTORY</span>
+		<i class="m-menu__hor-arrow la la-angle-down"></i>
+		<i class="m-menu__ver-arrow la la-angle-right"></i>
+	</a>
+	<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left m-menu__submenu--tabs">
+		<span class="m-menu__arrow m-menu__arrow--adjust"></span>
+			<ul class="m-menu__subnav">		
+ <div class="">
 	<button class="btn btn-accent m-btn--pill">
 		<span>
 			<span><?php echo date('l, d-m-Y'); ?></span>
@@ -214,85 +223,102 @@ class="m-menu__link-text">Dashboard</span><i class="m-menu__hor-arrow la la-angl
 	</button>
 </div>
 </li>
-			</ul>
-		</div>
-	</li>
+		</ul>
+	</div>
+</li>
 
-<!-- Inventory -->
-	<li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs" m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="javascript:;" class="m-menu__link m-menu__toggle" title=""><span class="m-menu__link-text">Inventory</span><i
-			 class="m-menu__hor-arrow la la-angle-down"></i><i class="m-menu__ver-arrow la la-angle-right"></i></a>
-		<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left m-menu__submenu--tabs"><span class="m-menu__arrow m-menu__arrow--adjust"></span>
-			<ul class="m-menu__subnav">
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="builder.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-graphic-2"></i><span class="m-menu__link-text">Pending</span></a></li>
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="builder.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-analytics"></i><span class="m-menu__link-text">Delivered</span></a></li>
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="builder.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-notes"></i><span class="m-menu__link-text">Canceled</span></a></li>
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="builder.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-clipboard"></i><span class="m-menu__link-text">Customer Care</span></a></li>
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="builder.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-alarm-1"></i><span class="m-menu__link-text">Payments</span></a></li>
-			</ul>
-		</div>
-	</li>
-
-<!-- Akutansi -->
-	<li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs" m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="javascript:;" class="m-menu__link m-menu__toggle" title=""><span class="m-menu__link-text">Akuntansi</span><i
-			 class="m-menu__hor-arrow la la-angle-down"></i><i class="m-menu__ver-arrow la la-angle-right"></i></a>
-		<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left m-menu__submenu--tabs"><span class="m-menu__arrow m-menu__arrow--adjust"></span>
-			<ul class="m-menu__subnav">
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-settings-1"></i><span class="m-menu__link-text">Orders</span></a></li>
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-imac"></i><span class="m-menu__link-text">Feedbacks</span></a></li>
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-paper-plane"></i><span class="m-menu__link-text">Customer Support</span></a></li>
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner2.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-multimedia"></i><span class="m-menu__link-text">Statistics</span></a></li>
-			</ul>
-		</div>
-	</li>
-
-<!-- SIM -->
-	<li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs" m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="javascript:;" class="m-menu__link m-menu__toggle" title="Sistem Informasi Manajemen"><span class="m-menu__link-text">SIM</span><i
-			 class="m-menu__hor-arrow la la-angle-down"></i><i class="m-menu__ver-arrow la la-angle-right"></i></a>
-		<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left m-menu__submenu--tabs"><span class="m-menu__arrow m-menu__arrow--adjust"></span>
-			<ul class="m-menu__subnav">
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-settings-1"></i><span class="m-menu__link-text">Build Tools</span></a></li>
-				<li class="m-menu__item " aria-haspopup="true"><a href="builder.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-imac"></i><span class="m-menu__link-text">Layout Builder</span></a></li>
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-paper-plane"></i><span class="m-menu__link-text">Documentatiion</span></a></li>
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner2.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-multimedia"></i><span class="m-menu__link-text">Reviews</span></a></li>
-			</ul>
-		</div>
-	</li>
-
-	<!-- Logistik -->
-	<li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs" m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="javascript:;" class="m-menu__link m-menu__toggle" title=""><span class="m-menu__link-text">Logistik</span><i
-			 class="m-menu__hor-arrow la la-angle-down"></i><i class="m-menu__ver-arrow la la-angle-right"></i></a>
-		<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left m-menu__submenu--tabs"><span class="m-menu__arrow m-menu__arrow--adjust"></span>
-			<ul class="m-menu__subnav">
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-settings-1"></i><span class="m-menu__link-text">Build Tools</span></a></li>
-				<li class="m-menu__item " aria-haspopup="true"><a href="builder.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-imac"></i><span class="m-menu__link-text">Layout Builder</span></a></li>
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-paper-plane"></i><span class="m-menu__link-text">Documentatiion</span></a></li>
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner2.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-multimedia"></i><span class="m-menu__link-text">Reviews</span></a></li>
-			</ul>
-		</div>
-	</li>
-
-	<!-- Produksi -->
-	<li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs" m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="javascript:;" class="m-menu__link m-menu__toggle" title=""><span class="m-menu__link-text">Produksi</span><i
-			 class="m-menu__hor-arrow la la-angle-down"></i><i class="m-menu__ver-arrow la la-angle-right"></i></a>
-		<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left m-menu__submenu--tabs"><span class="m-menu__arrow m-menu__arrow--adjust"></span>
-			<ul class="m-menu__subnav">
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-settings-1"></i><span class="m-menu__link-text">Build Tools</span></a></li>
-				<li class="m-menu__item " aria-haspopup="true"><a href="builder.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-imac"></i><span class="m-menu__link-text">Layout Builder</span></a></li>
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-paper-plane"></i><span class="m-menu__link-text">Documentatiion</span></a></li>
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="inner2.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-multimedia"></i><span class="m-menu__link-text">Reviews</span></a></li>
-			</ul>
-		</div>
-	</li>
-</ul>
+<!-- Akuntansi -->
+<li class="m-menu__item m-menu__item--submenu m-menu__item--submenu m-menu__item--tabs" m-menu-submenu-toggle="tab" aria-haspopup="true">
+	<a href="<?=base_url('') ?>" class="m-menu__link" title="Customer Relationship Management">
+		<span class="m-menu__link-text">AKUNTANSI</span>
+		<i class="m-menu__hor-arrow la la-angle-down"></i>
+		<i class="m-menu__ver-arrow la la-angle-right"></i>
+	</a>
+	<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left m-menu__submenu--tabs">
+		<span class="m-menu__arrow m-menu__arrow--adjust"></span>
+			<ul class="m-menu__subnav">		
+ <div class="">
+	<button class="btn btn-accent m-btn--pill">
+		<span>
+			<span><?php echo date('l, d-m-Y'); ?></span>
+		</span>
+	</button>
 </div>
-</div>
+</li>
+		</ul>
+	</div>
+</li>
 
+<!-- Sim -->
+<li class="m-menu__item m-menu__item--submenu m-menu__item--submenu m-menu__item--tabs" m-menu-submenu-toggle="tab" aria-haspopup="true">
+	<a href="<?=base_url('') ?>" class="m-menu__link" title="Sistem Informasi Manajemen">
+		<span class="m-menu__link-text">SIM</span>
+		<i class="m-menu__hor-arrow la la-angle-down"></i>
+		<i class="m-menu__ver-arrow la la-angle-right"></i>
+	</a>
+	<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left m-menu__submenu--tabs">
+		<span class="m-menu__arrow m-menu__arrow--adjust"></span>
+			<ul class="m-menu__subnav">		
+ <div class="">
+	<button class="btn btn-accent m-btn--pill">
+		<span>
+			<span><?php echo date('l, d-m-Y'); ?></span>
+		</span>
+	</button>
+</div>
+</li>
+		</ul>
+	</div>
+</li>
+
+<!-- Logistik -->
+<li class="m-menu__item m-menu__item--submenu m-menu__item--submenu m-menu__item--tabs" m-menu-submenu-toggle="tab" aria-haspopup="true">
+	<a href="<?=base_url('') ?>" class="m-menu__link" title="">
+		<span class="m-menu__link-text">LOGISTIK</span>
+		<i class="m-menu__hor-arrow la la-angle-down"></i>
+		<i class="m-menu__ver-arrow la la-angle-right"></i>
+	</a>
+	<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left m-menu__submenu--tabs">
+		<span class="m-menu__arrow m-menu__arrow--adjust"></span>
+			<ul class="m-menu__subnav">		
+ <div class="">
+	<button class="btn btn-accent m-btn--pill">
+		<span>
+			<span><?php echo date('l, d-m-Y'); ?></span>
+		</span>
+	</button>
+</div>
+</li>
+		</ul>
+	</div>
+</li>
+
+<!-- Produksi -->
+<li class="m-menu__item m-menu__item--submenu m-menu__item--submenu m-menu__item--tabs" m-menu-submenu-toggle="tab" aria-haspopup="true">
+	<a href="<?=base_url('') ?>" class="m-menu__link" title="">
+		<span class="m-menu__link-text">PRODUKSI</span>
+		<i class="m-menu__hor-arrow la la-angle-down"></i>
+		<i class="m-menu__ver-arrow la la-angle-right"></i>
+	</a>
+	<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left m-menu__submenu--tabs">
+		<span class="m-menu__arrow m-menu__arrow--adjust"></span>
+			<ul class="m-menu__subnav">		
+ <div class="">
+	<button class="btn btn-accent m-btn--pill">
+		<span>
+			<span><?php echo date('l, d-m-Y'); ?></span>
+		</span>
+	</button>
+</div>
+</li>
+		</ul>
+	</div>
+</li>
 <!-- end::Horizontal Menu -->
 </div>
 </div>
 </div>
 </header>
-<!-- end::Header -->
 	
 <!-- begin::Body -->
 <div class="m-grid__item m-grid__item--fluid  m-grid m-grid--ver-desktop m-grid--desktop m-page__container m-body">
