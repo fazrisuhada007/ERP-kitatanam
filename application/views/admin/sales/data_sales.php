@@ -128,7 +128,7 @@
 <div id="m_header_menu" class="m-header-menu m-aside-header-menu-mobile m-aside-header-menu-mobile--offcanvas  m-header-menu--skin-dark m-header-menu--submenu-skin-light m-aside-header-menu-mobile--skin-light m-aside-header-menu-mobile--submenu-skin-light ">
 
 <ul class="m-menu__nav  m-menu__nav--submenu-arrow ">
-<li class="m-menu__item m-menu__item--tabs" m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="<?=base_url('admin/dashboard') ?>" class="m-menu__link" title=""><span
+<li class="m-menu__item m-menu__item--submenu m-menu__item--submenu m-menu__item--tabs" m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="<?=base_url('admin/dashboard') ?>" class="m-menu__link" title=""><span
 class="m-menu__link-text">Dashboard</span><i class="m-menu__hor-arrow la la-angle-down"></i><i class="m-menu__ver-arrow la la-angle-right"></i></a>
 <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left m-menu__submenu--tabs"><span class="m-menu__arrow m-menu__arrow--adjust"></span>
 <ul class="m-menu__subnav">
@@ -178,6 +178,28 @@ class="m-menu__link-text">Dashboard</span><i class="m-menu__hor-arrow la la-angl
 			<ul class="m-menu__subnav">
 				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="<?=base_url('admin/sales') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-line-graph"></i><span class="m-menu__link-text">Dashboard</span></a></li>	
 				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="<?= base_url('admin/sales/data_sales') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-clipboard"></i><span class="m-menu__link-text">Data Sales</span></a></li>
+				<!-- <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="<?= base_url('admin/sales/data_sales') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-notes"></i><span class="m-menu__link-text">Laporan</span></a></li> -->
+				<!-- <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="builder.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-alarm-1"></i><span class="m-menu__link-text">Invoices</span></a></li> -->
+				<li class="m-menu__item  m-menu__item--actions">
+<div class="">
+	<button class="btn btn-accent m-btn--pill">
+		<span>
+			<span><?php echo date('l, d-m-Y'); ?></span>
+		</span>
+	</button>
+</div>
+</li>
+			</ul>
+		</div>
+	</li>
+
+<!-- Crm -->
+	<li class="m-menu__item m-menu__item--submenu m-menu__item--submenu m-menu__item--tabs" m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="<?=base_url('admin/crm/dashboard') ?>" class="m-menu__link" title="Customer Relationship Management"><span class="m-menu__link-text">CRM</span><i
+			 class="m-menu__hor-arrow la la-angle-down"></i><i class="m-menu__ver-arrow la la-angle-right"></i></a>
+		<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left m-menu__submenu--tabs"><span class="m-menu__arrow m-menu__arrow--adjust"></span>
+			<ul class="m-menu__subnav">
+				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="builder.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-line-graph"></i><span class="m-menu__link-text">Dashboard</span></a></li>	
+				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="<?= base_url('admin/sales/data_sales') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-clipboard"></i><span class="m-menu__link-text">Data Sales</span></a></li>
 				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="<?= base_url('admin/sales/data_sales') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-notes"></i><span class="m-menu__link-text">Laporan</span></a></li>
 				<!-- <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="builder.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-alarm-1"></i><span class="m-menu__link-text">Invoices</span></a></li> -->
 				<li class="m-menu__item  m-menu__item--actions">
@@ -193,33 +215,6 @@ class="m-menu__link-text">Dashboard</span><i class="m-menu__hor-arrow la la-angl
 		</div>
 	</li>
 
-<!-- CRM -->
-	<li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs" m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="javascript:;" class="m-menu__link m-menu__toggle" title="Customer Relationship Management"><span class="m-menu__link-text">CRM</span><i
-			 class="m-menu__hor-arrow la la-angle-down"></i><i class="m-menu__ver-arrow la la-angle-right"></i></a>
-		<div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left m-menu__submenu--tabs"><span class="m-menu__arrow m-menu__arrow--adjust"></span>
-			<ul class="m-menu__subnav">
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="builder.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-graphic-2"></i><span class="m-menu__link-text">Orders</span></a></li>
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="builder.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-analytics"></i><span class="m-menu__link-text">Customers</span></a></li>
-				<li class="m-menu__item " aria-haspopup="true"><a href="inner.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-notes"></i><span class="m-menu__link-text">Revenue</span></a></li>
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="builder.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-clipboard"></i><span class="m-menu__link-text">Invoices</span></a></li>
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="builder.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-alarm-1"></i><span class="m-menu__link-text">Bills</span></a></li>
-				<li class="m-menu__item  m-menu__item--actions" aria-haspopup="true">
-					<div class="m-menu__link m-menu__link--toggle-skip">
-						<div class="dropdown">
-							<a href="#" class="btn btn-primary m-btn m-btn--icon m-btn--pill m-btn--air   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<i class="la la-cloud-download"></i>&nbsp;&nbsp;Export
-							</a>
-							<div class="dropdown-menu dropdown-menu-right">
-								<a class="dropdown-item" href="#"><i class="flaticon-share"></i> Action</a>
-								<a class="dropdown-item" href="#"><i class="flaticon-settings"></i> Another action</a>
-								<a class="dropdown-item" href="#"><i class="flaticon-graphic-2"></i> Something else</a>
-							</div>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</li>
 
 <!-- Inventory -->
 	<li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs" m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="javascript:;" class="m-menu__link m-menu__toggle" title=""><span class="m-menu__link-text">Inventory</span><i

@@ -349,22 +349,22 @@ class="m-menu__link-text">Dashboard</span><i class="m-menu__hor-arrow la la-angl
 
 			<div class="form-group m-form__group">
 				<label for="no_ktp">Nomor Induk Kependudukan</label>
-				<input type="text" class="form-control m-input m-input--square" id="no_ktp" name="no_ktp" value="<?php echo $sales->no_ktp ?>">
+				<input type="text" class="form-control m-input m-input--square" id="no_ktp" name="no_ktp" value="<?php echo $sales->no_ktp ?>" autocomplete="off" autofocus/>
 			</div>
 
 			<div class="form-group m-form__group">
 				<label for="nama_sales">Nama Sales</label>
-				<input type="text" class="form-control m-input m-input--square" id="nama_sales" name="nama_sales" value="<?php echo $sales->nama_sales ?>" >
+				<input type="text" class="form-control m-input m-input--square" id="nama_sales" name="nama_sales" value="<?php echo $sales->nama_sales ?>" autocomplete="off"/>
 			</div>
 
 			<div class="form-group m-form__group">
 				<label for="telp">Nomor Telepon</label>
-				<input type="text" class="form-control m-input m-input--square" id="telp" name="telp" value="<?php echo $sales->telp ?>" >
+				<input type="text" class="form-control m-input m-input--square" id="telp" name="telp" value="<?php echo $sales->telp ?>" autocomplete="off"/>
 			</div>
 
 			<div class="form-group m-form__group">
-				<label for="email">Alamat Email</label>
-				<input type="text" class="form-control m-input m-input--square" id="email" name="email" value="<?php echo $sales->email ?>" >
+				<label for="email">Alamat Email<?php var_dump($sales);?></label> 
+				<input type="text" class="form-control m-input m-input--square" id="email" name="email" value="<?php echo $sales->email ?>" autocomplete="off"/>
 			</div>
 
 			<div class="form-group m-form__group">
@@ -372,7 +372,12 @@ class="m-menu__link-text">Dashboard</span><i class="m-menu__hor-arrow la la-angl
 				<select class="form-control m-input m-input--square" onchange="prof(this)" id="provinsi" batas="5" name="provinsi" value="<?php echo set_value('provinsi')?>">
 					<?php $prof = $this->db->query("SELECT * FROM wilayah where LENGTH(kode) ='2'")->result_array();
 					foreach ($prof as $key => $p) {
+						if($p['kode']==$sales->provinsi){
+echo '<option selected value="'.$p['kode'].'">'.$p['nama'].'</option>';
+						}else{
+
 					echo '<option value="'.$p['kode'].'">'.$p['nama'].'</option>';
+						}
 					}
 					?>
 				</select>
@@ -427,6 +432,12 @@ class="m-menu__link-text">Dashboard</span><i class="m-menu__hor-arrow la la-angl
 </div>
 <!-- end::Body -->
 <script>
+	$(document).ready(function(){
+
+	})
+	$('form > #provinsi').on('mouseover',function(){
+		alert('ok')
+	})
 	function prof(e){
 		var kode = $(e).val();
 		var jenis = $(e).attr('id');
@@ -446,7 +457,5 @@ class="m-menu__link-text">Dashboard</span><i class="m-menu__hor-arrow la la-angl
 			// console.log(html)
 		})
 	}
-	$('form #kecamatan').on('mouseover',function(){
-		alert('ini')
-	})
+	
 </script>

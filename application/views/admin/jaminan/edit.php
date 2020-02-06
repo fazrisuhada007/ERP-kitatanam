@@ -328,7 +328,7 @@ class="m-menu__link-text">Dashboard</span><i class="m-menu__hor-arrow la la-angl
 					<i class="la la-gear"></i>
 				</span>
 				<h3 class="m-portlet__head-text">
-					Form Tambah Sales
+					Form Edit Sales
 				</h3>
 			</div>
 		</div>
@@ -344,62 +344,12 @@ class="m-menu__link-text">Dashboard</span><i class="m-menu__hor-arrow la la-angl
     ?>
 
 	<!--begin::Form-->
-	<form method="POST" action="<?php base_url('admin/sales/tambah')?>" class="m-form m-form--fit m-form--label-align-right">
+	<form method="POST" action="<?php base_url('crm/jaminan/edit'.$jaminan->id_jaminan)?>" class="m-form m-form--fit m-form--label-align-right">
 		<div class="m-portlet__body">
 
 			<div class="form-group m-form__group">
-				<label for="no_ktp">Nomor Induk Kependudukan</label>
-				<input type="text" class="form-control m-input m-input--square" id="no_ktp" name="no_ktp" value="<?php echo set_value('no_ktp')?>" placeholder="Inputkan nomor induk kependudukan" autocomplete="off" autofocus/>
-			</div>
-
-			<div class="form-group m-form__group">
-				<label for="nama_sales">Nama Sales</label>
-				<input type="text" class="form-control m-input m-input--square" id="nama_sales" name="nama_sales" value="<?php echo set_value('nama_sales')?>" placeholder="Inputkan nama sales" autocomplete="off"/>
-			</div>
-
-			<div class="form-group m-form__group">
-				<label for="telp">Nomor Telepon</label>
-				<input type="text" class="form-control m-input m-input--square" id="telp" name="telp" value="<?php echo set_value('telp')?>" placeholder="Inputkan nomor telepon" autocomplete="off"/>
-			</div>
-
-			<div class="form-group m-form__group">
-				<label for="email">Alamat Email</label>
-				<input type="text" class="form-control m-input m-input--square" id="email" name="email" value="<?php echo set_value('email')?>" placeholder="Inputkan alamat email" autocomplete="off"/>
-			</div>
-
-			<div class="form-group m-form__group">
-				<label for="provinsi">Provinsi</label>
-				<select class="form-control m-input m-input--square" onchange="prof(this)" id="provinsi" batas="5" name="provinsi" value="<?php echo set_value('provinsi')?>">
-					<option>-- Pilih provinsi --</option>
-					<?php $prof = $this->db->query("SELECT * FROM wilayah where LENGTH(kode) ='2'")->result_array();
-					foreach ($prof as $key => $p) {
-					echo '<option value="'.$p['kode'].'">'.$p['nama'].'</option>';
-					}
-
-					?>
-					
-				</select>
-			</div>
-
-			<div class="form-group m-form__group">
-				<label for="kota">Kota</label>
-				<select class="form-control m-input m-input--square" onchange="prof(this)" id="kota" batas="8" name="kota" value="<?php echo set_value('kota')?>">
-					<option>-- Pilih kota/kabupaten --</option>
-				</select>
-			</div>
-
-			<div class="form-group m-form__group">
-				<label for="kecamatan">Kecamatan</label>
-				<select class="form-control m-input m-input--square" onchange="prof(this)" id="kecamatan" batas="13" name="kecamatan" value="<?php echo set_value('kecamatan')?>">
-					<option>-- Pilih kecamatan --</option>
-				</select>
-			</div>
-
-			<div class="form-group m-form__group">
-				<label for="alamat">Desa</label>
-				<select class="form-control m-input m-input--square" id="alamat" name="alamat" value="<?php echo set_value('alamat')?>">
-					<option>-- Pilih desa --</option>
-				</select>
+				<label for="nama_sales">Nama Jaminan</label>
+				<input type="text" class="form-control m-input m-input--square" id="nama_jaminan" name="nama_jaminan" value="<?php echo $jaminan->nama_jaminan ?>" autocomplete="off"/>
 			</div>
 
 		</div>
@@ -411,7 +361,7 @@ class="m-menu__link-text">Dashboard</span><i class="m-menu__hor-arrow la la-angl
 						<span>Simpan</span>
 					</span>
 				</button>
-				<a href="<?= base_url('admin/sales/data_sales') ?>" class="btn btn-warning  m-btn m-btn--icon">
+				<a href="<?= base_url('crm/jaminan') ?>" class="btn btn-warning  m-btn m-btn--icon">...
 					<span>
 						<i class="la la-close"></i>
 						<span>Batal</span>
@@ -430,6 +380,12 @@ class="m-menu__link-text">Dashboard</span><i class="m-menu__hor-arrow la la-angl
 </div>
 <!-- end::Body -->
 <script>
+	$(document).ready(function(){
+
+	})
+	$('form > #provinsi').on('mouseover',function(){
+		alert('ok')
+	})
 	function prof(e){
 		var kode = $(e).val();
 		var jenis = $(e).attr('id');
@@ -449,7 +405,5 @@ class="m-menu__link-text">Dashboard</span><i class="m-menu__hor-arrow la la-angl
 			// console.log(html)
 		})
 	}
-	$('form #kecamatan').on('mouseover',function(){
-		alert('ini')
-	})
+	
 </script>
