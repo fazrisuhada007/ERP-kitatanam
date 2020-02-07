@@ -15,7 +15,7 @@ class Dashboard extends CI_Controller {
 	//Halaman utama crm
 	public function index()
 	{
-		$data = array(	'title' => 'Admin | kitatanam',
+		$data = array(	'title' => 'Dashboard CRM',
 					   	'isi'   => 'admin/crm/list');
 		$this->load->view('admin/layout/wrapper', $data, FALSE);
 	}

@@ -328,7 +328,7 @@
 <div class="m-subheader ">
 <div class="d-flex align-items-center">
 <div class="mr-auto">
-<h3 class="m-subheader__title m-subheader__title--separator">Jaminan</h3>
+<h3 class="m-subheader__title m-subheader__title--separator">Kelompok Tani</h3>
 <ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
 <li class="m-nav__item m-nav__item--home">
 <a href="#" class="m-nav__link m-nav__link--icon">
@@ -352,10 +352,10 @@
 	<div class="m-portlet__head-caption">
 		<div class="m-portlet__head-title">
 			<h3 class="m-portlet__head-text">
-				<a href="<?= base_url('crm/jaminan/tambah') ?>" class="btn btn-success m-btn m-btn--custom m-btn--icon m-btn--air">
+				<a href="<?= base_url('crm/ktani/tambah') ?>" class="btn btn-success m-btn m-btn--custom m-btn--icon m-btn--air">
 					<span>
 						<i class="la la-plus"></i>
-						<span>Tambah Jaminan</span>
+						<span>Tambah Kelompok</span>
 					</span>
 				</a>
 			</h3>
@@ -369,23 +369,24 @@
 	<thead>
 		<tr class="text-center">
 			<th>No</th>
-			<th>Nama Jaminan</th>
+			<th>Nama Kelompok Tani</th>
 			<th>Aksi</th>
 		</tr>
 	</thead>
 	<tbody>
-		<?php $no=1; foreach ($jaminan as $jaminan) { ?>
+		<!-- ktani itu nama controllernya fazri suhada -->
+		<?php $no=1; foreach ($ktani as $ktani) { ?>
 		<tr class="text-center">
 			<td><?php echo $no++ ?></td>
-			<td><?php echo $jaminan->nama_jaminan ?></td>
+			<td><?php echo $ktani->nama_kelompok ?></td>
 			<td>
-				<a href="<?php echo base_url('crm/jaminan/edit/'.$jaminan->id_jaminan)?>" class="btn btn-primary btn-sm m-btn  m-btn m-btn--icon">
+				<a href="<?php echo base_url('crm/ktani/edit/'.$ktani->id_kelompok_tani)?>" class="btn btn-primary btn-sm m-btn  m-btn m-btn--icon">
 					<span>
 						<i class="la la-edit"></i>
 						<span>Edit</span>
 					</span>
 				</a>
-				<a href="<?php echo base_url('crm/jaminan/delete/'.$jaminan->id_jaminan)?>" class="tombol-hapus btn btn-danger btn-sm m-btn  m-btn m-btn--icon">
+				<a href="<?php echo base_url('crm/ktani/delete/'.$ktani->id_kelompok_tani)?>" class="tombol-hapus btn btn-danger btn-sm m-btn  m-btn m-btn--icon">
 					<span>
 						<i class="la la-trash"></i>
 						<span>Hapus</span>

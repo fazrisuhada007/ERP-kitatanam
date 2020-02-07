@@ -187,8 +187,8 @@
 				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="<?=base_url('') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-line-graph"></i><span class="m-menu__link-text">Dashboard</span></a></li>	
 				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="<?= base_url('') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-users"></i><span class="m-menu__link-text">Calon Nasabah</span></a></li>
 				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="<?= base_url('') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-user-ok"></i><span class="m-menu__link-text">Nasabah</span></a></li>
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="<?= base_url('') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-network"></i><span class="m-menu__link-text">Kelompok Tani</span></a></li>
-				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="<?= base_url('admin/crm/jaminan') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-list"></i><span class="m-menu__link-text">Jaminan</span></a></li>
+				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="<?= base_url('crm/ktani') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-network"></i><span class="m-menu__link-text">Kelompok Tani</span></a></li>
+				<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="<?= base_url('crm/jaminan') ?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-list"></i><span class="m-menu__link-text">Jaminan</span></a></li>
 				<!-- <li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true"><a href="builder.html" class="m-menu__link "><i class="m-menu__link-icon flaticon-alarm-1"></i><span class="m-menu__link-text">Invoices</span></a></li> -->
 				<li class="m-menu__item  m-menu__item--actions">
 	<div class="">
